@@ -9,6 +9,7 @@ let calc = 0;
 do{
     userNumber = parseInt(prompt("Inserisci un numero"));
     calc += userNumber;
+    userNumberList.push(calc)
 } while (calc < 50);
 
-console.log(calc);
+console.log(userNumberList);
