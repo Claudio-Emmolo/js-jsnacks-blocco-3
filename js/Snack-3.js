@@ -7,10 +7,10 @@ const secondArrey = [1,2,3,45,6,7,8,454,9,6,5,4,6,7,4,5,7,8,6,4,354,8,6,45,3,3,4
 console.log(`First Before After = ${fistArrey.length}`);
 console.log(`First Before After = ${secondArrey.length}`);
 
-while ( (fistArrey.length < secondArrey.length) || (fistArrey.length > secondArrey.length) ){
+while (fistArrey.length != secondArrey.length){
     if (fistArrey.length < secondArrey.length){
         fistArrey.push(0);
-    } else if (fistArrey.length > secondArrey.length){
+    } else{
         secondArrey.push(0);
     }
 }
