@@ -2,14 +2,13 @@
 
 const userNumberList = [];
 
-let userNumber;
 
 let calc = 0;
 
 do{
-    userNumber = parseInt(prompt("Inserisci un numero"));
+    let userNumber = parseInt(prompt("Inserisci un numero"));
     calc += userNumber;
-    userNumberList.push(calc)
+    userNumberList.push(userNumber);
 } while (calc < 50);
 
 console.log(userNumberList);
