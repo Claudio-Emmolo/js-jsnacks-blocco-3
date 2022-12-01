@@ -10,7 +10,8 @@
  const tenRandomNumbers = [];
 
  for (let i = 0; i < 10 ; i++){
-    const randomNumberGenerator = Math.floor(Math.random() * startingList.length);
+    
+    const randomNumberGenerator = startingList[Math.floor(Math.random() * startingList.length)];
     tenRandomNumbers.push(randomNumberGenerator);
 
 
