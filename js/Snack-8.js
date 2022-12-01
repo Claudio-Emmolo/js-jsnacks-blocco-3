@@ -9,12 +9,24 @@
 
  const tenRandomNumbers = [];
 
- for (let i = 0; i < 10 ; i++){
-    
-    const randomNumberGenerator = startingList[Math.floor(Math.random() * startingList.length)];
-    tenRandomNumbers.push(randomNumberGenerator);
+ while (tenRandomNumbers.length < 10){
 
-
- }
+     const randomNumberGenerator = getRandomNumber(0, startingList.length - 1);
+        
+     for (let i = 0; i < 10 ; i++){    
+         
+         if (!tenRandomNumbers.includes(startingList[randomNumberGenerator])){
+             tenRandomNumbers.push(startingList[randomNumberGenerator]);
+            }  
+        }
+}
 
  console.log(tenRandomNumbers);
+
+ 
+// --------Function----------//
+
+ function getRandomNumber(firstNumber, secondNumber){
+    const numberRandom = Math.floor(Math.random() * (secondNumber - firstNumber + 1) + firstNumber);
+    return numberRandom;
+}
